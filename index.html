@@ -1,0 +1,22 @@
+<script src="https://unpkg.com/vue"></script>
+<div id="app">
+  <h2>{{products[1]}} are in stock.</h2>
+  <ul>
+    <li v-for="product in prodcuts">
+      {{product}}
+    </li>
+  </ul>
+</div>
+
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      products: [
+        'Boots',
+        'Jackets',
+        'Hiking Socks'
+      ]
+    }
+  })
+</script>
